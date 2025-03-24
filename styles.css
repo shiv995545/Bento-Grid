@@ -1,0 +1,239 @@
+@font-face {
+    font-family: 'DMSans-Regular';
+    src: url('fonts/static/DMSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DMSans-Medium';
+    src: url('fonts/static/DMSans-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DMSans-MediumItalic';
+    src: url('fonts/static/DMSans-MediumItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DMSans-Italic-Variable';
+    src: url('fonts/static/DMSans-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DMSans-Variable';
+    src: url('fonts/static/DMSans-VariableFont_opsz,wght.ttf') format('truetype');
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    height: 35rem;
+    width: 45rem;
+    gap: 20px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    font-family: 'DMSans-Regular', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'DMSans-Medium', sans-serif;
+    letter-spacing: -1px;
+    line-height: 0.9;
+    margin: 0;
+}
+
+p {
+    font-family: 'DMSans-MediumItalic', sans-serif;
+    letter-spacing: -0.5px;
+}
+
+.First {
+    background-color: #faeee2;
+    grid-area: 1/1/4/3;
+    border-radius: 5%;
+}
+#one {
+    height: 60px;
+    width: 130px;
+    padding-left: 20px;
+}
+
+#heading1 {
+    padding: 50px 20px 20px 20px;
+}
+
+
+.Second {
+    background-color: #7552dc;
+    grid-area: 1/3/3/-3;
+    border-radius: 5%;
+    text-align: center;
+    font-size: 20px;
+    
+}   
+#two {
+    height: 20px;
+    width: 110px;
+}
+
+#two1 {
+    margin: 0;
+    font-size: 12px;
+    color: #c8b3f7;
+}
+#heading2 {
+    padding: 27px 20px 20px 20px;
+    color: white;
+    font-size: 35px;
+    font-weight: normal;
+}
+
+
+
+.Third {
+    background-color: #dcd1fc;
+    grid-area: 1/-3/-3/-1;
+    border-radius: 5%;
+    font-size: 19px;
+    overflow: hidden;
+}   
+#three {
+    height: 190px;
+    width: 235px;
+    padding-left: 20px;
+    
+}
+
+#three1 {
+    font-size: 10px;
+    color: #6f6981;
+    padding-left: 20px;
+
+}
+#heading3 {
+    padding: 30px 20px 20px 18px;
+}
+
+
+
+.Fourth {
+    background-color: #ffcc6a;
+    grid-area: 4/1/-1/3;
+    border-radius: 5%;
+}   
+#four {
+    height: 140px;
+    width: 140px;
+    padding: 16px 0px 10px 16px;
+}
+#heading4 {
+    padding: 20px 20px 20px 20px;
+}
+
+
+
+
+.Fifth {
+    background-color: #ffffff;
+    grid-area: 3/3/5/5;
+    border-radius: 5%;
+    overflow: hidden;
+}   
+#five {
+    height: 40px;
+    width: 205px;
+    padding: 16px 18px 15px 15px;
+}
+#heading5 {
+    padding-left: 20px;
+    font-size: 21px;
+    font-weight: normal;
+}
+
+
+
+
+.Sixth {
+    background-color: #ffcc6a;
+    grid-area: 3/5/5/7;
+    border-radius: 5%;
+    overflow: hidden;
+}   
+#six {
+    height: 110px;
+    width: 132px;
+    padding-left: 17px;    
+}
+
+#heading6 {
+    padding: 20px 20px 11px 17px;
+    font-size: 21px;
+}
+
+
+
+
+.Seventh {
+    background-color: #ffffff;
+    grid-area: 5/3/7/5;
+    border-radius: 5%;
+}   
+#seven {
+    height: 40px;
+    width: 120px;
+    padding: 20px 0px 0px 10px;
+}
+
+#heading7 {
+    font-size: 45px;
+    font-weight: normal;
+    padding: 20px 20px 0px 10px;
+    color: black;
+}
+#seven1 {
+    font-size: 12px;
+    padding-left: 10px;
+    color: #848484;
+}
+
+
+
+.Eighth {
+    background-color: #7552dc;
+    grid-area: 5/5/7/-1;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#eight {
+    height: 140px;
+    width: 150px;
+    padding: 15px;
+}
+
+#heading8 {
+    color: #ece8f9;
+    font-weight: normal;
+}
+
+
+@media (max-width: 300px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
+        width: 95%;
+    }
+    .First, .Second, .Third, .Fourth, .Fifth, .Sixth, .Seventh, .Eighth {
+        grid-area: auto;
+    }
+}
